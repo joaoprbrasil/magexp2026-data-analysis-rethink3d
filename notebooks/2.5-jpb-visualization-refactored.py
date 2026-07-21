@@ -229,3 +229,40 @@ fig.savefig(FIG_PATH / "05-no_spam_account_hist_day12.png", dpi=300, bbox_inches
 plt.show()
 
 # %%
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7, 3))
+ax1.text(0.1, 0.47, 'Dia 11 - Sábado', fontsize=10, color="gray", transform=ax.transAxes)
+ax1.text(0.02, 0.23, '143', fontsize=70, color="gray", transform=ax.transAxes)
+ax1.axis('off')
+
+ax2.text(0.8, 0.47, 'Dia 12 - Domingo', fontsize=10, color="gray", transform=ax.transAxes)
+ax2.text(0.79, 0.235, '41', fontsize=70, color="gray", transform=ax.transAxes)
+ax2.axis('off')
+
+fig.suptitle('Contas registradas na plataforma gamificada.', fontsize=14)
+plt.tight_layout()
+fig.savefig(FIG_PATH / "06-account-creation-number.png", dpi=300, bbox_inches="tight", facecolor="white")
+
+plt.show()
+
+# %%
+fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(7, 2), layout="constrained")
+
+# Ax 1 - Dia 11
+ax1.text(0.53, 0.85, 'Dia 11 - Sábado', fontsize=10, color="gray", transform=ax1.transAxes)
+ax1.text(0.4, 0.33, '143', fontsize=70, color="gray", transform=ax1.transAxes)
+ax1.spines[['top', 'right', 'bottom', 'left']].set_visible(False)
+ax1.set_xticks([])
+ax1.set_yticks([])
+#ax1.axis('off')
+
+# Ax 2 - Dia 12
+ax2.text(0.233, 0.85, 'Dia 12 - Domingo', fontsize=10, color="gray", transform=ax2.transAxes)
+ax2.text(0.23, 0.33, '41', fontsize=70, color="gray", transform=ax2.transAxes)
+ax2.spines[['top', 'right', 'bottom', 'left']].set_visible(False)
+ax2.set_xticks([])
+ax2.set_yticks([])
+
+fig.suptitle('Contas registradas na plataforma gamificada.', fontsize=14)
+
+fig.savefig(FIG_PATH / "06-account-creation-number.png", dpi=300, bbox_inches="tight")
+plt.show()

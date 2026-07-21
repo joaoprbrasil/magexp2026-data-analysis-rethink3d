@@ -8,6 +8,5 @@ anaconda_projects/
 notebooks/0.0-jpb-remove-sensitive-data.ipynb
 
 reports/figure2/
-reports/figures/
 
 src/data/make_dataset.py
