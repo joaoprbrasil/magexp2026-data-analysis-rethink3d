@@ -220,28 +220,12 @@ plt.show()
 # --- Gráfico 05: Histograma Dia 12 ---
 fig, ax = plot_histogram_contas(
     "2026-07-12 12:00:00", "2026-07-12 21:00:00",
-    "Dia 12 - Domingo",
+    "Dia 12 - Domingo\nCriação de contas",
     df_normais["createdAt"], y_max=30
 )
 ax.text(0.8, 0.5, "Total:", fontsize=13, color="gray", transform=ax.transAxes)
 ax.text(0.8, 0.43, "41 contas.", fontsize=13, color="dimgrey", fontweight="medium", transform=ax.transAxes)
 fig.savefig(FIG_PATH / "05-no_spam_account_hist_day12.png", dpi=300, bbox_inches="tight", facecolor="white")
-plt.show()
-
-# %%
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7, 3))
-ax1.text(0.1, 0.47, 'Dia 11 - Sábado', fontsize=10, color="gray", transform=ax.transAxes)
-ax1.text(0.02, 0.23, '143', fontsize=70, color="gray", transform=ax.transAxes)
-ax1.axis('off')
-
-ax2.text(0.8, 0.47, 'Dia 12 - Domingo', fontsize=10, color="gray", transform=ax.transAxes)
-ax2.text(0.79, 0.235, '41', fontsize=70, color="gray", transform=ax.transAxes)
-ax2.axis('off')
-
-fig.suptitle('Contas registradas na plataforma gamificada.', fontsize=14)
-plt.tight_layout()
-fig.savefig(FIG_PATH / "06-account-creation-number.png", dpi=300, bbox_inches="tight", facecolor="white")
-
 plt.show()
 
 # %%
