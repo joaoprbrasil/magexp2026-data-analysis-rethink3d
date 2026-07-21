@@ -13,7 +13,7 @@ A fim de espalhar o sorteio para o maior número de pessoas dentro do evento, us
 
 ![number-creation-account](reports/figures/06-account-creation-number.png)
 
-No total, tivemos **184 contas registradas na plataforma gamificada**, um resultado bastante otimista, que no dia do evento nos mostrou que a plataforma estava bombando. Porém, após o evento, fizemos a análise no banco de dados e descobrimos que três participantes recomendaram, respectivamente, 35, 20 e 20 amigos. Mesmo sendo duvidoso, isso é totalmente possível se eles forem pessoas muito populares. Mas, analisando a tendência e os horários das criações das contas, obtivemos o seguinte resultado:
+No total, tivemos **184 contas registradas na plataforma gamificada**, um resultado bastante otimista, que no dia do evento nos mostrou que a plataforma estava bombando. Porém, após o evento, fizemos a análise no banco de dados e descobrimos que três participantes recomendaram, respectivamente, 35, 20 e 20 amigos. Mesmo sendo suspeito, isso é totalmente possível se eles forem pessoas muito populares. Mas, analisando a tendência e os horários das criações das contas, obtivemos o seguinte resultado:
 
 ![line-spam-creation-account-11](reports/figures/01-spam_account_line_day11.png)
 
