@@ -7,9 +7,9 @@ Nos dias 11 e 12 de julho de 2026, a Rethink3D participou do Maranhão Geek Expe
 A participação no evento tinha como objetivo a divulgação da plataforma web e mobile da Rethink3D para novos usuários. Além disso, buscávamos entender melhor o público jovem ludovicense a partir de um formulário de perguntas, mas quem responderia a um formulário maçante e tedioso, nos padrões do Google?
 
 ## Sobre a plataforma gamificada
-Para solucionar esse problema, criamos nosso próprio formulário, personalizável e com a mesma estética geek do evento. Para motivar os visitantes a responder, criamos também um sorteio gamificado de 5 prêmios: quem respondesse e acumulasse mais pontos em quizzes nerds e outras missões teria mais chances de ganhar. Dessa maneira, o formulário virou uma das missões dessa dinâmica digital gamificada.
+Para solucionar esse problema, criamos nosso próprio formulário, personalizável e com a mesma estética geek do evento. Para motivar os visitantes a responder, criamos também um sorteio gamificado de 5 prêmios: quem respondesse e acumulasse mais tickets em quizzes nerds e outras missões teria mais chances de ganhar. Dessa maneira, o formulário virou uma das missões dessa dinâmica digital gamificada.
 
-A fim de espalhar o sorteio para o maior número de pessoas dentro do evento, usamos a lógica de convites por código único: ao passar seu código para um amigo, tanto você quanto ele recebem mais pontos no momento da criação da conta. Assim, as pessoas eram incentivadas a convidar outras pessoas a criarem contas para participar do sorteio. A criação de conta não era difícil: apenas com um número de celular (sem validação), um nome e uma senha, já era possível criar uma conta.
+A fim de espalhar o sorteio para o maior número de pessoas dentro do evento, usamos a lógica de convites por código único: ao passar seu código para um amigo, tanto você quanto ele recebem mais tickets no momento da criação da conta. Assim, as pessoas eram incentivadas a convidar outras pessoas a criarem contas para participar do sorteio. A criação de conta não era difícil: apenas com um número de celular (sem validação), um nome e uma senha, já era possível criar uma conta.
 
 ![number-creation-account](reports/figures/06-account-creation-number.png)
 
@@ -17,11 +17,13 @@ No total, tivemos **184 contas registradas na plataforma gamificada**, um result
 
 ![line-spam-creation-account-11](reports/figures/01-spam_account_line_day11.png)
 
-Em menos de 30 minutos, 35 contas foram criadas usando o mesmo código de convite de apenas um participante, e outras 40 contas foram criadas usando os códigos de outros dois participantes. Como o processo de criação de contas era simples demais, decidimos que essas contas, que usaram o código de amigo desses 3 usuários, deveriam ser consideradas spam, o que inflava as estatísticas do evento com dados falsos.
+Em menos de 30 minutos, 35 contas foram criadas usando o mesmo código de convite de apenas um participante, e outras 40 contas foram criadas usando os códigos de outros dois participantes. Isso aconteceu porque o processo de criação de contas era simples demais e fácil de burlar: como não havia validação de número, era possível usar qualquer número de celular, de qualquer pessoa, sem o consentimento do dono, o que facilitava o spam na criação de contas para inflar o número de tickets. 
+
+Diante disso, decidimos que essas contas, que usaram o código de amigo desses 3 usuários, deveriam ser consideradas spam, o que inflou as estatísticas do evento com dados falsos.
 
 ![hist-spam-creation-account-11](reports/figures/00-spam_account_hist_day11.png)
 
-Felizmente, no domingo, dia 12, não houve nenhuma ocorrência ou suspeita de spam, e, após a remoção das contas suspeitas, poderemos analisar os dados com precisão.
+Felizmente, no domingo, dia 12, não houve nenhuma ocorrência ou suspeita de spam. Além disso, após a remoção das contas suspeitas do dia 11, a distribuição de contas ficou estabilizada, sem picos tendenciosos, e assim podemos analisar os dados com precisão.
 
 <p align="center">
   <img src="reports/figures/02-no_spam_account_line_day11.png" width="49%" alt="line-11" />
